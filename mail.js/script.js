@@ -8,14 +8,11 @@ var mail = prompt('Inserisci la tua mail');
 //lista delle mail autorizzate
 var listaMail = ['dargen@92.com','boolean@careers.it','web@developer.it','spruoccolo@live.com'];
 
-for ( var i = 0; i <= 3; i++){
+for ( var i = 0; i < listaMail.length; i++){
   console.log(listaMail[i]);
-}
 
-
-//controllo di accesso alla lista
-if ( listaMail.includes(mail) ){
+  if ( mail == listaMail[i] ){
     alert('Ok, sei nel club privè Dev Boolean!');
-} else{
-    alert('Sei un impostore! Vattene o ti denunzio!');
 }
+}
+
